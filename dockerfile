@@ -3,7 +3,7 @@ FROM ubuntu
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
-    && apt-get install -y \
+    && apt-get install -y --no-install-recommends \
     cups \
     printer-driver-foo2zjs-common \
     avahi-daemon
